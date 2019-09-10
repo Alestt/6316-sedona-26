@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="inner-page">
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="container">
 
         <nav class="header__menu">
           <a class="header__logo" href="index.html">
@@ -30,11 +30,92 @@
             </li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main class="main">
-        <h1 class="visually-hidden">Сайт поиска жилья в туристическом городке Седона штата Аризона</h1>
+    <main class="main">
+      <h1 class="visually-hidden">Поиск гостиниц в туристическом городке Седона штата Аризона</h1>
+      <section class="filters">
+        <div class="container">
+          <h2 class="visually-hidden">Форма поиска гостиниц</h2>
+          <form class="filters__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="filters__group filters__group-1">
+              <legend>Инфраструктура:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input id="pool" type="checkbox" name="pool" checked>
+                  <label for="pool">Бассейн</label>
+                </li>
+                <li class="filters__item">
+                  <input id="parking" type="checkbox" name="parking">
+                  <label for="parking">Парковка</label>
+                </li>
+                <li class="filters__item">
+                  <input id="internet" type="checkbox" name="internet">
+                  <label for="internet">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
 
+            <fieldset class="filters__group filters__group-2">
+              <legend>Тип жилья:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input id="hotel" type="checkbox" name="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                </li>
+                <li class="filters__item">
+                  <input id="motel" type="checkbox" name="motel" checked>
+                  <label for="motel">Мотель</label>
+                </li>
+                <li class="filters__item">
+                  <input id="apartments" type="checkbox" name="apartments" checked>
+                  <label for="apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filters__group filters__group-3">
+              <legend>Стоимость в сутки (Р):</legend>
+              <div class="price">
+                <label for="price-min">от</label>
+                <input id="price-min" type="text" name="price-min" value="0">
+                <label for="price-max">до</label>
+                <input id="price-max" type="text" name="price-max" value="3000">
+              </div>
+              <div class="range">
+              <span class="range-left"></span>
+              <span class="range-right"></span>
+            </div>
+            <button class="filters__button" type="submit">Показать</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      <section class="sorting">
+        <div class="container">
+          <h2 class="sorting__title">Найдено: 3</h2>
+          <span class="sorting__name">Сортировка:</span>
+          <ul class="sorting__list">
+            <li class="sorting__item">
+              <a class="sorting__link sorting__link_active" href="#">По цене</a>
+            </li>
+            <li class="sorting__item">
+              <a class="sorting__link" href="#">По типу</a>
+            </li>
+            <li class="sorting__item">
+              <a class="sorting__link" href="#">По рейтингу</a>
+            </li>
+          </ul>
+          <div class="sorting__triangle">
+            <a class="sorting__triangle-up" href="#"></a>
+            <a class="sorting__triangle-down sorting__triangle_active" href="#"></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
         <section class="hotels">
           <h2 class="visually-hidden">Гостиницы в Седоне</h2>
           <ul class="hotels__list">
@@ -102,10 +183,12 @@
             </li>
           </ul>
         </section>
-      </main>
+      </div>
+    </main>
 
 
-      <footer class="footer">
+    <footer class="footer">
+      <div class="container">
         <a class="footer__hashtag" href="index.html">#Visitsedona</a>
 
         <div class="footer__social">
@@ -128,7 +211,7 @@
             <img src="https://via.placeholder.com/150x100" alt="Логотип HTML Academy">
           </a>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
