@@ -55,7 +55,7 @@
               <span class="reasons__group1-number">№1</span>
               <p class="reasons__group1-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <section class="reasons__info">
+            <div class="reasons__info">
               <h3 class="visually-hidden">Информация для туристов</h3>
               <ul class="reasons__info-list">
                 <li class="reasons__info-item">
@@ -71,7 +71,7 @@
                   <p class="reasons__info-description">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
-            </section>
+            </div>
           </div>
 
           <div class="reasons__item">
@@ -106,37 +106,35 @@
           <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="search__button" href="#">Поиск гостиницы в Седоне</a>
 
-          <div class="search__modal">
-            <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
-              <div class="search__form-row">
-                <label class="search__label" for="arrival-date">Дата заезда:</label>
-                <input class="search__input" id="arrival-date" type="text" name="arrival" value="24 апреля 2017">
-                <button class="search__btn" type="button" aria-label="Календарь"></button>
-              </div>
+          <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
+            <div class="search__form-row">
+              <label class="search__label" for="arrival-date">Дата заезда:</label>
+              <input class="search__input" id="arrival-date" type="text" name="arrival" value="24 апреля 2017">
+              <button class="search__btn" type="button" aria-label="Календарь"></button>
+            </div>
 
-              <div class="search__form-row">
-                <label class="search__label" for="departure-date">Дата выезда:</label>
-                <input class="search__input" id="departure-date" type="text" name="departure" value="4 июля 2017">
-                <button class="search__btn" type="button" aria-label="Календарь"></button>
-              </div>
+            <div class="search__form-row">
+              <label class="search__label" for="departure-date">Дата выезда:</label>
+              <input class="search__input" id="departure-date" type="text" name="departure" value="4 июля 2017">
+              <button class="search__btn" type="button" aria-label="Календарь"></button>
+            </div>
 
-              <div class="search__form-row">
-                <label class="search__label" for="amount-adults">Взрослые:</label>
-                <div class="search__input-amount">
-                  <button class="search__btn-decrease" type="button" aria-label="Уменьшить количество взрослых"></button>
-                  <button class="search__btn-increase" type="button" aria-label="Увеличить количество взрослых"></button>
-                  <input class="search__input" id="amount-adults" type="text" name="adults" value="2">
-                </div>
-                <label class="search__label" for="amount-children">Дети:</label>
-                <div class="search__input-amount">
-                  <button class="search__btn-decrease" type="button" aria-label="Уменьшить количество детей"></button>
-                  <button class="search__btn-increase" type="button" aria-label="Увеличить количество детей"></button>
-                  <input class="search__input" id="amount-children" type="text" name="children" value="0">
-                </div>
+            <div class="search__form-row">
+              <label class="search__label" for="amount-adults">Взрослые:</label>
+              <div class="search__input-amount">
+                <button class="search__btn-decrease" type="button" aria-label="Уменьшить количество взрослых"></button>
+                <button class="search__btn-increase" type="button" aria-label="Увеличить количество взрослых"></button>
+                <input class="search__input" id="amount-adults" type="text" name="adults" value="2">
               </div>
-              <button class="search__find" type="submit">Найти</button>
-            </form>
-          </div>
+              <label class="search__label" for="amount-children">Дети:</label>
+              <div class="search__input-amount">
+                <button class="search__btn-decrease" type="button" aria-label="Уменьшить количество детей"></button>
+                <button class="search__btn-increase" type="button" aria-label="Увеличить количество детей"></button>
+                <input class="search__input" id="amount-children" type="text" name="children" value="0">
+              </div>
+            </div>
+            <button class="search__find" type="submit">Найти</button>
+          </form>
         </section>
 
         <section class="map">
@@ -149,19 +147,17 @@
       <footer class="footer">
         <a class="footer__hashtag">#Visitsedona</a>
 
-        <div class="footer__social">
-          <ul class="footer__social-list">
-            <li class="footer__social-item">
-              <a class="footer__social-link" href="#">Твиттер</a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link" href="#">Фейсбук</a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link" href="#">Ютюб</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">Твиттер</a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">Фейсбук</a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">Ютюб</a>
+          </li>
+        </ul>
 
         <div class="footer__copyright">
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="ССылка на HTML Academy">
