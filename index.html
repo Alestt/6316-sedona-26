@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Седона - туристический городок в штате Аризона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -123,14 +124,14 @@
               <label class="search__label" for="amount-adults">Взрослые:</label>
               <div class="search__input-amount">
                 <button class="search__btn-decrease" type="button" aria-label="Уменьшить количество взрослых"></button>
-                <button class="search__btn-increase" type="button" aria-label="Увеличить количество взрослых"></button>
                 <input class="search__input" id="amount-adults" type="text" name="adults" value="2">
+                <button class="search__btn-increase" type="button" aria-label="Увеличить количество взрослых"></button>
               </div>
               <label class="search__label" for="amount-children">Дети:</label>
               <div class="search__input-amount">
                 <button class="search__btn-decrease" type="button" aria-label="Уменьшить количество детей"></button>
-                <button class="search__btn-increase" type="button" aria-label="Увеличить количество детей"></button>
                 <input class="search__input" id="amount-children" type="text" name="children" value="0">
+                <button class="search__btn-increase" type="button" aria-label="Увеличить количество детей"></button>
               </div>
             </div>
             <button class="search__find" type="submit">Найти</button>
@@ -161,7 +162,7 @@
 
         <div class="footer__copyright">
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="ССылка на HTML Academy">
-            <p class="footer__copyright-text">Website by</p>
+            <span class="footer__copyright-text">Website by</span>
             <img src="img/logo-htmlacademy.svg"  width="115" height="41" alt="Логотип HTML Academy">
           </a>
         </div>
