@@ -57,6 +57,9 @@ input[type="radio"].visually-hidden {
 /* стили для введения на главной */
 .intro {
   background-color: #dceaf2;
+  background-image: url(../img/intro.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 /* стили для промо на главной */
@@ -200,6 +203,15 @@ input[type="radio"].visually-hidden {
 .search__input:active {
   background-color: #fff;
 }
+.search__btn {
+  width: 21px;
+  height: 22px;
+  background-color: transparent;
+  background-image: url(../img/calendar.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border: none;
+}
 .search__find {
   font-size: 21px;
   font-weight: 700;
@@ -230,16 +242,61 @@ input[type="radio"].visually-hidden {
 .footer__social-list {
   list-style: none;
 }
-.footer__social-link {
-  color: #000;
+
+
+.footer__social-item {
+  position: relative;
+  font-size: 0;
+  width: 45px;
+  height: 45px;
+  background-color: #81b3d2;
 }
-.footer__social-link:hover,
-.footer__social-link:focus {
-  color: #669ec0;
+.footer__social-tw::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 17px;
+  height: 15px;
+  background-image: url(../img/twitter.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
-.footer__social-link:active {
-  color: #5496bd;
+.footer__social-fb::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  width: 12px;
+  height: 22px;
+  background-image: url(../img/fb-icon.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
+.footer__social-you::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  width: 20px;
+  height: 16px;
+  background-image: url(../img/youtube.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.footer__social-item:hover,
+.footer__social-item:focus {
+  background-color: #669ec0;
+}
+.footer__social-item:active {
+  background-color: #5496bd;
+}
+.footer__social-tw:active::before,
+.footer__social-fb:active::before,
+.footer__social-you:active::before {
+  opacity: 0.3;
+}
+
 .footer__copyright-text {
   line-height: 26px;
   color: #000;
