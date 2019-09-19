@@ -75,38 +75,6 @@ input[type="radio"].visually-hidden {
   color: #333;
 }
 
-/* для второго задания
-.reasons__group1 {
-  color: #fff;
-  text-align: center;
-  background-color: #81b3d2;
-}
-.reasons__group1-title {
-  font-size: 21px;
-  font-weight: 700;
-}
-.reasons__info {
-  text-align: center;
-}
-.reasons__info-list {
-  list-style: none;
-}
-.reasons__info-title {
-  font-size: 21px;
-  font-weight: 700;
-}
-.reasons__group2 {
-  text-align: center;
-}
-.reasons__group2-title {
-  font-size: 21px;
-  font-weight: 700;
-}
-.reasons__group2-number,
-.reasons__group2-description {
-  color: #333;
-} */
-
 /* стили для основного содержания на внутренней */
 .hotels__list {
   list-style: none;
