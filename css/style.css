@@ -1,0 +1,271 @@
+/* глобальные стили */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* стили для шапки */
+.header__menu {
+  line-height: 26px;
+  font-weight: 700;
+}
+.header__list {
+  list-style: none;
+}
+.header__link {
+  color: #000;
+}
+.header__link:hover,
+.header__link:focus {
+  color: #81b3d2;
+}
+.header__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.header__link_active {
+  color: #766357;
+}
+
+/* стили для введения на главной */
+.intro {
+  background-color: #dceaf2;
+  background-image: url(../img/intro.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/* стили для промо на главной */
+.promo {
+  line-height: 26px;
+  text-align: center;
+}
+.promo__title {
+  font-size: 21px;
+  font-weight: 700;
+}
+.promo__subtitle {
+  color: #333;
+}
+
+/* стили для основного содержания на внутренней */
+.hotels__list {
+  list-style: none;
+}
+.hotels__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000;
+}
+.hotels__title:hover,
+.hotels__title:focus {
+  color: #81b3d2;
+}
+.hotels__title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.hotels__row {
+  color: #333;
+}
+.hotels__link {
+  font-weight: 700;
+}
+.hotels__link-details {
+  color: #fff;
+  background-color: #81b3d2;
+}
+.hotels__link-details:hover,
+.hotels__link-details:focus {
+  background-color: #669ec0;
+}
+.hotels__link-details:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+.hotels__link-reserve {
+  color: #fff;
+  background-color: #766357;
+}
+.hotels__link-reserve:hover,
+.hotels__link-reserve:focus {
+  background-color: #604e43;
+}
+.hotels__link-reserve:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+.hotels__rating {
+  color: #666;
+}
+.hotels__rating-text {
+  background-color: #f2f2f2;
+}
+
+/* стили для поиска на главной */
+.search {
+  text-align: center;
+}
+.search__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.search__description {
+  line-height: 24px;
+  color: #333;
+}
+.search__button {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #fff;
+  background-color: #766357;
+}
+.search__button:hover,
+.search__button:focus {
+  background-color: #604e43;
+}
+.search__button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+.search__form {
+  font-weight: 700;
+}
+.search__input {
+  font-weight: 700;
+  background-color: #f2f2f2;
+}
+.search__input:hover,
+.search__input:focus {
+  background-color: #ebebeb;
+}
+.search__input:active {
+  background-color: #fff;
+}
+.search__btn {
+  width: 21px;
+  height: 22px;
+  background-color: transparent;
+  background-image: url(../img/calendar.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border: none;
+}
+.search__find {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #fff;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;
+}
+.search__find:hover,
+.search__find:focus {
+  background-color: #669ec0;
+}
+.search__find:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+/* стили для подвала */
+.footer__hashtag {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000;
+}
+.footer__social-list {
+  list-style: none;
+}
+
+
+.footer__social-item {
+  position: relative;
+  font-size: 0;
+  width: 45px;
+  height: 45px;
+  background-color: #81b3d2;
+}
+.footer__social-tw::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 17px;
+  height: 15px;
+  background-image: url(../img/twitter.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.footer__social-fb::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  width: 12px;
+  height: 22px;
+  background-image: url(../img/fb-icon.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.footer__social-you::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  width: 20px;
+  height: 16px;
+  background-image: url(../img/youtube.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.footer__social-item:hover,
+.footer__social-item:focus {
+  background-color: #669ec0;
+}
+.footer__social-item:active {
+  background-color: #5496bd;
+}
+.footer__social-tw:active::before,
+.footer__social-fb:active::before,
+.footer__social-you:active::before {
+  opacity: 0.3;
+}
+
+.footer__copyright-text {
+  line-height: 26px;
+  color: #000;
+}
