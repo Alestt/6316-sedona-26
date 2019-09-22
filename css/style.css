@@ -75,6 +75,126 @@ input[type="radio"].visually-hidden {
   color: #333;
 }
 
+/* стили для основного содержания на главной */
+.reasons__list {
+  counter-reset: num;
+  list-style: none;
+}
+.reasons__item {
+  position: relative;
+  padding-left: 20px;
+}
+.reasons__item::before {
+  content: "\2013  №" counter(num) " \2013";
+  counter-increment: num;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+.reasons__group1 {
+  color: #fff;
+  text-align: center;
+  background-color: #81b3d2;
+}
+.reasons__group1-title,
+.reasons__info-title,
+.reasons__group2-title {
+  font-size: 21px;
+  font-weight: 700;
+}
+.reasons__info-list  {
+  list-style: none;
+  color: #000;
+  background-color: #fff;
+}
+.reasons__group2 {
+  text-align: center;
+}
+
+/* стили для фильтра на внутренней */
+.filters {
+  color: #fff;
+  background-color: #3a4d5f;
+  background-image: url(../img/filter.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.filters__group {
+  border: none;
+}
+.filters__legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+.price__input {
+  color: #fff;
+  background-color: transparent;
+}
+.filters__button {
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+.filters__button:hover,
+.filters__button:focus {
+  color: #000;
+  background-color: #fff;
+}
+
+/* стили для сортировки на внутренней */
+.sorting__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.sorting__name,
+.sorting__list {
+  font-size: 12px;
+  line-height: 18px;
+}
+.sorting__list {
+  list-style: none;
+}
+.sorting__link {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+.sorting__link_active {
+  color: #81b3d2;
+  border: none;
+}
+.sorting__link:hover,
+.sorting__link:focus {
+  color: #81b3d2;
+}
+.sorting__link:active {
+  color: #000;
+  border: none;
+}
+.sorting__triangle {
+  font-size: 0;
+}
+.sorting__triangle-up:hover path,
+.sorting__triangle-up:focus path {
+  fill: #231f20;
+}
+.sorting__triangle-up:active path {
+  fill: #81b3d2;
+}
+.sorting__triangle-down:hover path,
+.sorting__triangle-down:focus path {
+  fill: #231f20;
+}
+.sorting__triangle-down:active path {
+  fill: #81b3d2;
+}
+.sorting__triangle_active path {
+  fill: #81b3d2;
+}
+
 /* стили для основного содержания на внутренней */
 .hotels__list {
   list-style: none;

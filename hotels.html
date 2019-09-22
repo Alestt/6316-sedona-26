@@ -37,7 +37,7 @@
         <h2 class="visually-hidden">Форма поиска гостиниц</h2>
         <form class="filters__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filters__group filters__group-1">
-            <legend>Инфраструктура:</legend>
+            <legend class="filters__legend">Инфраструктура:</legend>
             <div class="filters__item">
               <input id="pool" type="checkbox" name="pool" checked>
               <label for="pool">Бассейн</label>
@@ -53,7 +53,7 @@
           </fieldset>
 
           <fieldset class="filters__group filters__group-2">
-            <legend>Тип жилья:</legend>
+            <legend class="filters__legend">Тип жилья:</legend>
             <div class="filters__item">
               <input id="hotel" type="checkbox" name="hotel" checked>
               <label for="hotel">Гостиница</label>
@@ -69,12 +69,12 @@
           </fieldset>
 
           <fieldset class="filters__group filters__group-3">
-            <legend>Стоимость в сутки (Р):</legend>
+            <legend class="filters__legend">Стоимость в сутки (Р):</legend>
             <div class="price">
               <label for="price-min">от</label>
-              <input id="price-min" type="text" name="price-min" value="0">
+              <input class="price__input" id="price-min" type="text" name="price-min" value="0">
               <label for="price-max">до</label>
-              <input id="price-max" type="text" name="price-max" value="3000">
+              <input class="price__input" id="price-max" type="text" name="price-max" value="3000">
             </div>
             <div class="range">
               <span class="range-left"></span>
@@ -100,8 +100,18 @@
           </li>
         </ul>
         <div class="sorting__triangle">
-          <a class="sorting__triangle-up" href="#">По возрастанию </a>
-          <a class="sorting__triangle-down sorting__triangle_active" href="#">По убыванию</a>
+          <a class="sorting__triangle-up" href="#">
+            <span>По возрастанию</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+            </svg>
+          </a>
+          <a class="sorting__triangle-down sorting__triangle_active" href="#">
+            <span>По убыванию</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#cacaca" d="M5.5 10L0 0h11"/>
+            </svg>
+          </a>
         </div>
       </section>
 
