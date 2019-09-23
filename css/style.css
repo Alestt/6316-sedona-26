@@ -56,8 +56,22 @@ input[type="radio"].visually-hidden {
 
 /* стили для введения на главной */
 .intro {
+  position: relative;
+  min-height: 509px;
   background-color: #dceaf2;
   background-image: url(../img/intro.jpg);
+  background-size: 1200px 773px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.intro::after {
+  content: "";
+  position: absolute;
+  top: 452px;
+  left: 0;
+  width: 1200px;
+  height: 59px;
+  background-image: url(../img/intro-mask.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -102,6 +116,8 @@ input[type="radio"].visually-hidden {
   width: 800px;
   height: 256px;
   background-image: url(../img/city.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 .reasons__item2 {
   padding-bottom: 260px;
