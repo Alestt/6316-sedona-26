@@ -31,14 +31,49 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
 
 /* стили для шапки */
 .header__menu {
+  position: relative;
   line-height: 26px;
   font-weight: 700;
 }
+.header__logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 138px;
+  margin: 0 auto;
+  z-index: 1;
+}
 .header__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 15px;
   list-style: none;
+}
+.header__item {
+  width: 99px;
+  margin-left: 71px;
+  margin-right: 73px;
+}
+.header__item:nth-child(4n+2) {
+  margin-right: 189px;
+}
+.header__item:nth-child(4n+3) {
+  margin-left: 195px;
+}
+.header__item:nth-child(4n+4) {
+  text-align: right;
+  margin-left: 59px;
 }
 .header__link {
   color: #000;
@@ -58,10 +93,11 @@ input[type="radio"].visually-hidden {
 .intro {
   position: relative;
   min-height: 509px;
+  text-align: center;
   background-color: #dceaf2;
   background-image: url(../img/intro.jpg);
   background-size: 1200px 773px;
-  background-position: 0 0;
+  background-position: 0 -55px;
   background-repeat: no-repeat;
 }
 .intro::after {
@@ -75,17 +111,30 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+.intro__img {
+  padding-top: 77px;
+}
 
 /* стили для промо на главной */
 .promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 30px;
   line-height: 26px;
   text-align: center;
 }
 .promo__title {
+  width: 450px;
+  margin: 0;
+  margin-bottom: 27px;
   font-size: 21px;
   font-weight: 700;
 }
 .promo__subtitle {
+  margin: 0;
   color: #333;
 }
 
@@ -197,6 +246,11 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+.filters__form {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 217px;
+}
 .filters__group {
   border: none;
 }
@@ -224,18 +278,43 @@ input[type="radio"].visually-hidden {
 }
 
 /* стили для сортировки на внутренней */
+.sorting {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 29px;
+  padding-left: 72px;
+  padding-right: 70px;
+  padding-bottom: 26px;
+}
 .sorting__title {
+  margin: 0;
+  margin-right: 47px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+}
+.sorting__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-right: 505px;
+  list-style: none;
+}
+.sorting__name {
+  margin-right: 40px;
 }
 .sorting__name,
 .sorting__list {
   font-size: 12px;
   line-height: 18px;
 }
-.sorting__list {
-  list-style: none;
+.sorting__item {
+  margin-right: 33px;
+}
+.sorting__item:last-child {
+  margin-right: 0;
 }
 .sorting__link {
   color: rgba(0, 0, 0, 0.3);
@@ -254,7 +333,11 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 .sorting__triangle {
+  padding-top: 11px;
   font-size: 0;
+}
+.sorting__triangle--up {
+  margin-right: 11px;
 }
 .sorting__triangle--up:hover path,
 .sorting__triangle--up:focus path {
@@ -276,28 +359,75 @@ input[type="radio"].visually-hidden {
 
 /* стили для основного содержания на внутренней */
 .hotels__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
+.hotels__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.hotels__item:first-child {
+  border-top: 1px solid #e5e5e5;
+}
+.hotels__img {
+  height: 90px;
+  margin-right: 30px;
+}
 .hotels__title {
+  margin: 0;
+  margin-top: -5px;
+  margin-bottom: 8px;
+}
+.hotels__title-link {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #000;
 }
-.hotels__title:hover,
-.hotels__title:focus {
+.hotels__title-link:hover,
+.hotels__title-link:focus {
   color: #81b3d2;
 }
-.hotels__title:active {
+.hotels__title-link:active {
   color: rgba(0, 0, 0, 0.3);
 }
+.hotels__description {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  margin-right: 521px;
+}
 .hotels__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
   color: #333;
 }
+.hotels__row-about {
+  width: 100px;
+  margin-right: 16px;
+}
 .hotels__link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   font-weight: 700;
 }
 .hotels__link-details {
+  width: 110px;
+  margin-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
   color: #fff;
   background-color: #81b3d2;
 }
@@ -310,6 +440,10 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
 }
 .hotels__link-reserve {
+  width: 142px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
   color: #fff;
   background-color: #766357;
 }
@@ -322,9 +456,17 @@ input[type="radio"].visually-hidden {
   background-color: #503e33;
 }
 .hotels__rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
   color: #666;
 }
 .hotels__rating-text {
+  width: 110px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
   background-color: #f2f2f2;
 }
 
@@ -400,21 +542,43 @@ input[type="radio"].visually-hidden {
 }
 
 /* стили для подвала */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 38px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 37px;
+}
 .footer__hashtag {
+  margin-top: 9px;
+  margin-left: 60px;
+  margin-right: 132px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #000;
 }
 .footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-left: 125px;
+  margin-right: 125px;
   list-style: none;
 }
 .footer__social-item {
   position: relative;
+  margin-right: 6px;
   font-size: 0;
-  width: 45px;
-  height: 45px;
+  width: 46px;
+  height: 46px;
   background-color: #81b3d2;
+  cursor: pointer;
+}
+.footer__social-item:last-child {
+  margin-right: 0;
 }
 .footer__social--tw::before {
   content: "";
@@ -461,8 +625,17 @@ input[type="radio"].visually-hidden {
 .footer__social--you:active::before {
   opacity: 0.3;
 }
-
+.footer__copyright {
+  margin-top: 3px;
+  margin-left: 103px;
+}
+.footer__copyright-link {
+  display: flex;
+  flex-wrap: wrap;
+}
 .footer__copyright-text {
+  margin-top: 6px;
+  margin-right: 8px;
   line-height: 26px;
   color: #000;
 }
