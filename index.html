@@ -50,39 +50,39 @@
         <section class="reasons">
           <h2 class="visually-hidden">Причины, по которым стоит посетить Седону:</h2>
           <ol class="reasons__list">
-            <li class="reasons__item reasons__item--1 reasons__group--1">
-              <h3 class="reasons__item-title">Настоящий городок</h3>
-              <p class="reasons__item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <ul class="reasons__info-list">
-                <li class="reasons__info-item reasons__info-item--1">
-                  <h4 class="reasons__info-title">Жильё</h4>
-                  <p class="reasons__info-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <li class="reasons__item reasons__item--1">
+              <h3 class="reasons__title">Настоящий городок</h3>
+              <p class="reasons__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <ul class="reasons__info info">
+                <li class="info__item info__item--1">
+                  <h4 class="info__title">Жильё</h4>
+                  <p class="info__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li class="reasons__info-item reasons__info-item--2">
-                  <h4 class="reasons__info-title">Еда</h4>
-                  <p class="reasons__info-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <li class="info__item info__item--2">
+                  <h4 class="info__title">Еда</h4>
+                  <p class="info__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li class="reasons__info-item reasons__info-item--3">
-                  <h4 class="reasons__info-title">Сувениры</h4>
-                  <p class="reasons__info-description">Не только китайского, но и местного производства!</p>
+                <li class="info__item info__item--3">
+                  <h4 class="info__itle">Сувениры</h4>
+                  <p class="info__description">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
             </li>
-            <li class="reasons__item reasons__item--2 reasons__group--1">
-              <h3 class="reasons__item-title">Там есть Мост дьявола</h3>
-              <p class="reasons__item-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <li class="reasons__item reasons__item--2">
+              <h3 class="reasons__title">Там есть Мост дьявола</h3>
+              <p class="reasons__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </li>
-            <li class="reasons__item reasons__group--2">
-              <h3 class="reasons__item-title">Небольшая площадь</h3>
-              <p class="reasons__item-description">Все достопримечательности находятся очень близко</p>
+            <li class="reasons__item">
+              <h3 class="reasons__title">Небольшая площадь</h3>
+              <p class="reasons__description">Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="reasons__item reasons__group--2">
-              <h3 class="reasons__item-title">Красивая дорога</h3>
-              <p class="reasons__item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <li class="reasons__item">
+              <h3 class="reasons__title">Красивая дорога</h3>
+              <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="reasons__item reasons__group--2">
-              <h3 class="reasons__item-title">Мало туристов</h3>
-              <p class="reasons__item-description">Большинство едет в гранд каньон и толпится там</p>
+            <li class="reasons__item">
+              <h3 class="reasons__title">Мало туристов</h3>
+              <p class="reasons__description">Большинство едет в гранд каньон и толпится там</p>
             </li>
           </ol>
         </section>
@@ -94,30 +94,30 @@
           <a class="search__button" href="#">Поиск гостиницы в Седоне</a>
 
           <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
-            <div class="search__form-row">
+            <div class="search__row">
               <label class="search__label" for="arrival-date">Дата заезда:</label>
               <input class="search__input" id="arrival-date" type="text" name="arrival" value="24 апреля 2017">
               <button class="search__btn" type="button" aria-label="Календарь"></button>
             </div>
 
-            <div class="search__form-row">
+            <div class="search__row">
               <label class="search__label" for="departure-date">Дата выезда:</label>
               <input class="search__input" id="departure-date" type="text" name="departure" value="4 июля 2017">
               <button class="search__btn" type="button" aria-label="Календарь"></button>
             </div>
 
-            <div class="search__form-row">
+            <div class="search__row">
               <label class="search__label" for="amount-adults">Взрослые:</label>
-              <div class="search__input-amount">
+              <div class="search__amount">
                 <button class="search__btn-decrease" type="button" aria-label="Уменьшить количество взрослых"></button>
                 <input class="search__input" id="amount-adults" type="text" name="adults" value="2">
                 <button class="search__btn-increase" type="button" aria-label="Увеличить количество взрослых"></button>
               </div>
               <label class="search__label" for="amount-children">Дети:</label>
-              <div class="search__input-amount">
-                <button class="search__btn-decrease" type="button" aria-label="Уменьшить количество детей"></button>
+              <div class="search__amount">
+                <button class="search__decrease" type="button" aria-label="Уменьшить количество детей"></button>
                 <input class="search__input" id="amount-children" type="text" name="children" value="0">
-                <button class="search__btn-increase" type="button" aria-label="Увеличить количество детей"></button>
+                <button class="search__increase" type="button" aria-label="Увеличить количество детей"></button>
               </div>
             </div>
             <button class="search__find" type="submit">Найти</button>
@@ -126,7 +126,7 @@
 
         <section class="map">
           <h2 class="visually-hidden">Карта Седоны</h2>
-          <img src="img/map.png"  width="1200" height="593" alt="Месторасположение города Седона на карте">
+          <img class="map__img" src="img/map.png"  width="1200" height="593" alt="Месторасположение города Седона на карте">
         </section>
       </main>
 
@@ -134,22 +134,22 @@
       <footer class="footer">
         <a class="footer__hashtag">#Visitsedona</a>
 
-        <ul class="footer__social-list">
-          <li class="footer__social-item footer__social--tw">
-            <a class="footer__social-link" href="#">Твиттер</a>
+        <ul class="footer__social social">
+          <li class="social__item social__item--tw">
+            <a class="social__link" href="#">Твиттер</a>
           </li>
-          <li class="footer__social-item footer__social--fb">
-            <a class="footer__social-link" href="#">Фейсбук</a>
+          <li class="social__item social__item--fb">
+            <a class="social__link" href="#">Фейсбук</a>
           </li>
-          <li class="footer__social-item footer__social--you">
-            <a class="footer__social-link" href="#">Ютюб</a>
+          <li class="social__item social__item--you">
+            <a class="social__link" href="#">Ютюб</a>
           </li>
         </ul>
 
-        <div class="footer__copyright">
-          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="ССылка на HTML Academy">
-            <span class="footer__copyright-text">Website by</span>
-            <img src="img/logo-htmlacademy.svg"  width="115" height="41" alt="Логотип HTML Academy">
+        <div class="footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="ССылка на HTML Academy">
+            <span class="copyright__text">Website by</span>
+            <img class="copyright__img" src="img/logo-htmlacademy.svg"  width="115" height="41" alt="Логотип HTML Academy">
           </a>
         </div>
       </footer>
