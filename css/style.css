@@ -545,6 +545,7 @@ input[type="radio"].visually-hidden {
 /* стили для подвала */
 .footer {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 1056px;
@@ -553,7 +554,6 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.9);
 }
 .footer__hashtag {
-  min-width: 162px;
   margin-left: 60px;
   font-size: 21px;
   font-weight: 700;
@@ -578,7 +578,6 @@ input[type="radio"].visually-hidden {
   font-size: 0;
   width: 46px;
   height: 46px;
-  margin-bottom: 5px;
   background-color: #81b3d2;
   cursor: pointer;
 }
