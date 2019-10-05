@@ -33,50 +33,55 @@
         <section class="filters">
           <h2 class="visually-hidden">Форма поиска гостиниц</h2>
           <form class="filters__form form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form__group form__group--1">
-              <legend class="form__legend">Инфраструктура:</legend>
-              <div class="form__item">
-                <input class="form__input" id="pool" type="checkbox" name="pool" checked>
-                <label class="form__label" for="pool">Бассейн</label>
-              </div>
-              <div class="form__item">
-                <input class="form__input" id="parking" type="checkbox" name="parking">
-                <label class="form__label" for="parking">Парковка</label>
-              </div>
-              <div class="form__item">
-                <input class="form__input" id="internet" type="checkbox" name="internet">
-                <label class="form__label" for="internet">Wi-Fi</label>
-              </div>
-            </fieldset>
+            <div class="form__left">
+              <fieldset class="form__group">
+                <legend class="form__legend">Инфраструктура:</legend>
+                <div class="form__item">
+                  <input class="form__input" id="pool" type="checkbox" name="pool" checked>
+                  <label class="form__label" for="pool">Бассейн</label>
+                </div>
+                <div class="form__item">
+                  <input class="form__input" id="parking" type="checkbox" name="parking">
+                  <label class="form__label" for="parking">Парковка</label>
+                </div>
+                <div class="form__item">
+                  <input class="form__input" id="internet" type="checkbox" name="internet">
+                  <label class="form__label" for="internet">Wi-Fi</label>
+                </div>
+              </fieldset>
 
-            <fieldset class="form__group form__group--2">
-              <legend class="form__legend">Тип жилья:</legend>
-              <div class="form__item">
-                <input class="form__input" id="hotel" type="checkbox" name="hotel" checked>
-                <label class="form__label" for="hotel">Гостиница</label>
-              </div>
-              <div class="form__item">
-                <input class="form__input" id="motel" type="checkbox" name="motel" checked>
-                <label class="form__label" for="motel">Мотель</label>
-              </div>
-              <div class="form__item">
-                <input class="form__input" id="apartments" type="checkbox" name="apartments" checked>
-                <label class="form__label" for="apartments">Апартаменты</label>
-              </div>
-            </fieldset>
+              <fieldset class="form__group">
+                <legend class="form__legend">Тип жилья:</legend>
+                <div class="form__item">
+                  <input class="form__input" id="hotel" type="checkbox" name="hotel" checked>
+                  <label class="form__label" for="hotel">Гостиница</label>
+                </div>
+                <div class="form__item">
+                  <input class="form__input" id="motel" type="checkbox" name="motel" checked>
+                  <label class="form__label" for="motel">Мотель</label>
+                </div>
+                <div class="form__item">
+                  <input class="form__input" id="apartments" type="checkbox" name="apartments" checked>
+                  <label class="form__label" for="apartments">Апартаменты</label>
+                </div>
+              </fieldset>
+            </div>
 
-            <div class="form__row">
-              <fieldset class="form__group form__group--3">
-                <legend class="form__legend">Стоимость в сутки (Р):</legend>
+            <div class="form__right">
+              <fieldset class="form__group">
+                <legend class="form__legend form__legend--right">Стоимость в сутки (Р):</legend>
                 <div class="form__price price">
                   <label class="price__label" for="price-min">от</label>
                   <input class="price__input" id="price-min" type="text" name="price-min" value="0">
-                  <label class="price__label" for="price-max">до</label>
+                  <label class="price__label price__label--to" for="price-max">до</label>
                   <input class="price__input" id="price-max" type="text" name="price-max" value="3000">
                 </div>
                 <div class="form__range range">
-                  <span class="range__span"></span>
-                  <span class="range__span"></span>
+                  <div class="range__scale">
+                    <div class="range__bar"></div>
+                  </div>
+                  <div class="range__toggle range__toggle--min"></div>
+                  <div class="range__toggle range__toggle--max"></div>
                 </div>
               </fieldset>
               <button class="filters__button" type="submit">Показать</button>
