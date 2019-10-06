@@ -136,31 +136,40 @@ input[type="radio"].visually-hidden {
 
 /* стили для основного содержания на главной */
 .reasons__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   counter-reset: num;
   list-style: none;
 }
 .reasons__item {
   position: relative;
-  padding-left: 20px;
+  width: 400px;
   text-align: center;
+  background-color: #eee;
 }
 .reasons__item::before {
-  content: "\2013  №" counter(num) " \2013";
+  content: "\2014  №" counter(num) " \2014";
   counter-increment: num;
   position: absolute;
-  top: 1px;
-  left: 1px;
+  top: 114px;
+  left: 175px;
+}
+.reasons__item--2::before {
+  left: 975px;
 }
 .reasons__item--1 {
-  padding-bottom: 260px;
+  width: 1200px;
   color: #fff;
   background-color: #81b3d2;
 }
 .reasons__item--1::after {
   content: "";
   position: absolute;
-  top: 310px;
-  left: 20px;
+  top: 0;
+  left: 400px;
   width: 800px;
   height: 256px;
   background-image: url(../img/city.jpg);
@@ -168,29 +177,68 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 .reasons__item--2 {
-  padding-bottom: 260px;
+  width: 1200px;
   color: #fff;
   background-color: #81b3d2;
 }
 .reasons__item--2::after {
   content: "";
   position: absolute;
-  top: 70px;
-  left: 20px;
+  top: 0;
+  left: 0;
   width: 800px;
   height: 256px;
   background-image: url(../img/bridge.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+.reasons__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 310px;
+  min-height: 256px;
+  padding-left: 45px;
+}
+.reasons__wrap--middle {
+  padding-left: 845px;
+}
+.reasons__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 156px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 330px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #000;
+  background-color: #fff;
+}
 .info__item {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 286px;
+  padding-left: 54px;
+  padding-top: 57px;
+  padding-right: 59px;
+  padding-bottom: 80px;
 }
 .info__item--1::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 60px;
+  left: 162px;
   width: 75px;
   height: 72px;
   background-image: url(../img/icon-1.svg);
@@ -200,8 +248,8 @@ input[type="radio"].visually-hidden {
 .info__item--2::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 10px;
+  top: 62px;
+  left: 163px;
   width: 74px;
   height: 70px;
   background-image: url(../img/icon-2.svg);
@@ -211,8 +259,8 @@ input[type="radio"].visually-hidden {
 .info__item--3::after {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 15px;
+  top: 57px;
+  left: 167px;
   width: 64px;
   height: 76px;
   background-image: url(../img/icon-3.svg);
@@ -220,14 +268,34 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 .reasons__title,
-.reasons__title {
+.info__title {
+  width: 151px;
+  margin: 0;
   font-size: 21px;
   font-weight: 700;
 }
-.info  {
-  list-style: none;
-  color: #000;
-  background-color: #fff;
+.info__title {
+  padding-top: 105px;
+}
+.reasons__description,
+.info__description {
+  width: 290px;
+  margin: 0;
+}
+.reasons__description {
+  padding-bottom: 8px;
+}
+.reasons__description--2 {
+  width: 310px;
+}
+.reasons__description--3 {
+  width: 220px;
+}
+.reasons__description--4 {
+  width: 270px;
+}
+.reasons__description--5 {
+  width: 255px;
 }
 
 /* стили для фильтра на внутренней */
