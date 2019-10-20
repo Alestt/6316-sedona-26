@@ -5,7 +5,7 @@
     <title>Гостиницы в Седоне штата Аризона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="inner-page">
     <div class="container">
@@ -18,11 +18,11 @@
           <div class="header__row">
             <div class="header__item">
               <a class="header__link" href="#">Информация</a>
-              <a class="header__link" href="#">Фото и видео</a>
+              <a class="header__link header__link--letter-spacing" href="#">Фото и видео</a>
             </div>
             <div class="header__item header__item--right">
               <a class="header__link header__link--active">Гостиницы</a>
-              <a class="header__link" href="#">Карта штата</a>
+              <a class="header__link header__link--margin-left" href="#">Карта штата</a>
            </div>
           </div>
         </nav>
@@ -37,15 +37,15 @@
               <fieldset class="form__group">
                 <legend class="form__legend">Инфраструктура:</legend>
                 <div class="form__item">
-                  <input class="form__input" id="pool" type="checkbox" name="pool" checked>
+                  <input class="visually-hidden form__input" id="pool" type="checkbox" name="pool" checked>
                   <label class="form__label" for="pool">Бассейн</label>
                 </div>
                 <div class="form__item">
-                  <input class="form__input" id="parking" type="checkbox" name="parking">
+                  <input class="visually-hidden form__input" id="parking" type="checkbox" name="parking">
                   <label class="form__label" for="parking">Парковка</label>
                 </div>
                 <div class="form__item">
-                  <input class="form__input" id="internet" type="checkbox" name="internet">
+                  <input class="visually-hidden form__input" id="internet" type="checkbox" name="internet">
                   <label class="form__label" for="internet">Wi-Fi</label>
                 </div>
               </fieldset>
@@ -53,15 +53,15 @@
               <fieldset class="form__group">
                 <legend class="form__legend">Тип жилья:</legend>
                 <div class="form__item">
-                  <input class="form__input" id="hotel" type="checkbox" name="hotel" checked>
+                  <input class="visually-hidden form__input" id="hotel" type="checkbox" name="hotel" checked>
                   <label class="form__label" for="hotel">Гостиница</label>
                 </div>
                 <div class="form__item">
-                  <input class="form__input" id="motel" type="checkbox" name="motel" checked>
+                  <input class="visually-hidden form__input" id="motel" type="checkbox" name="motel" checked>
                   <label class="form__label" for="motel">Мотель</label>
                 </div>
                 <div class="form__item">
-                  <input class="form__input" id="apartments" type="checkbox" name="apartments" checked>
+                  <input class="visually-hidden form__input" id="apartments" type="checkbox" name="apartments" checked>
                   <label class="form__label" for="apartments">Апартаменты</label>
                 </div>
               </fieldset>
@@ -74,7 +74,7 @@
                   <label class="price__label" for="price-min">от</label>
                   <input class="price__input" id="price-min" type="text" name="price-min" value="0">
                   <label class="price__label price__label--to" for="price-max">до</label>
-                  <input class="price__input" id="price-max" type="text" name="price-max" value="3000">
+                  <input class="price__input price__input--short" id="price-max" type="text" name="price-max" value="3000">
                 </div>
                 <div class="form__range range">
                   <div class="range__scale">
@@ -84,7 +84,7 @@
                   <div class="range__toggle range__toggle--max"></div>
                 </div>
               </fieldset>
-              <button class="filters__button" type="submit">Показать</button>
+              <button class="filters__button" type="button">Показать</button>
             </div>
           </form>
         </section>
@@ -106,14 +106,12 @@
             </ul>
           </div>
           <div class="sorting__triangle triangle">
-            <a class="triangle__button triangle__button--up" href="#">
-              <span>По возрастанию</span>
+            <a class="triangle__button triangle__button--up" href="/hotels.html" aria-label="Сортировка по возрастанию">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
               </svg>
             </a>
-            <a class="triangle__button triangle__button--down triangle__button--active" href="#">
-              <span>По убыванию</span>
+            <a class="triangle__button triangle__button--down triangle__button--active" href="/hotels.html" aria-label="Сортировка по убыванию">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path fill="#cacaca" d="M5.5 10L0 0h11"/>
               </svg>
@@ -253,7 +251,6 @@
             </svg>
           </a>
         </div>
-
       </footer>
     </div>
   </body>

@@ -5,7 +5,7 @@
     <title>Седона - туристический городок в штате Аризона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="container">
@@ -19,11 +19,11 @@
           <div class="header__row">
             <div class="header__item">
               <a class="header__link" href="#">Информация</a>
-              <a class="header__link" href="#">Фото и видео</a>
+              <a class="header__link header__link--letter-spacing" href="#">Фото и видео</a>
             </div>
             <div class="header__item header__item--right">
               <a class="header__link" href="hotels.html">Гостиницы</a>
-              <a class="header__link" href="#">Карта штата</a>
+              <a class="header__link header__link--margin-left" href="#">Карта штата</a>
            </div>
           </div>
         </nav>
@@ -107,12 +107,12 @@
         <section class="search">
           <h2 class="search__title">Заинтересовались?</h2>
           <p class="search__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a class="search__button" href="search.html">Поиск гостиницы в Седоне</a>
+          <button class="search__button" type="button">Поиск гостиницы в Седоне</button>
 
           <form class="search__form search__form--show" action="https://echo.htmlacademy.ru" method="get">
             <div class="search__row">
-              <label class="search__label" for="arrival-date">Дата заезда:</label>
-              <input class="search__input" id="arrival-date" type="text" name="arrival" value="24 апреля 2017">
+              <label class="search__label search__label--letter-spacing" for="arrival-date">Дата заезда:</label>
+              <input class="search__input" id="arrival-date" type="text" name="arrival" placeholder="24 апреля 2017">
               <button class="search__btn" type="button" aria-label="Календарь">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                   <path  fill="#cacaca" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
@@ -122,8 +122,8 @@
             </div>
 
             <div class="search__row">
-              <label class="search__label" for="departure-date">Дата выезда:</label>
-              <input class="search__input" id="departure-date" type="text" name="departure" value="4 июля 2017">
+              <label class="search__label search__label--letter-spacing" for="departure-date">Дата выезда:</label>
+              <input class="search__input" id="departure-date" type="text" name="departure" placeholder="4 июля 2017">
               <button class="search__btn" type="button" aria-label="Календарь">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                   <path  fill="#cacaca" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
@@ -206,6 +206,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/modal.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
