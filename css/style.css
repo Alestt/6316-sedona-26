@@ -159,6 +159,14 @@ input[type="radio"].visually-hidden {
   text-align: center;
   background-color: #eee;
 }
+.reasons__item--top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1200px;
+  color: #fff;
+  background-color: #81b3d2;
+}
 .reasons__num {
   position: relative;
   padding-top: 42px;
@@ -182,51 +190,17 @@ input[type="radio"].visually-hidden {
 .reasons__num--5::before {
   left: 103px;
 }
-.reasons__item--1 {
-  width: 1200px;
-  color: #fff;
-  background-color: #81b3d2;
-}
-.reasons__item {
-  position: relative;
-}
-.reasons__item--1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 400px;
-  width: 800px;
-  height: 256px;
-  background-image: url(../img/city.jpg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.reasons__item--2 {
-  width: 1200px;
-  color: #fff;
-  background-color: #81b3d2;
-}
-.reasons__item--2::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 800px;
-  height: 256px;
-  background-image: url(../img/bridge.jpg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
 .reasons__wrap {
   display: flex;
   flex-direction: column;
   width: 310px;
   min-height: 206px;
-  padding-top: 50px;
+  padding-top: 49px;
   padding-left: 45px;
 }
 .reasons__wrap--middle {
-  padding-left: 845px;
+  padding-right: 45px;
+  padding-left: 0;
 }
 .reasons__column {
   display: flex;
@@ -253,7 +227,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 286px;
+  width: 287px;
   min-height: 192px;
   padding-top: 57px;
   padding-right: 59px;
@@ -727,6 +701,7 @@ input[type="radio"].visually-hidden {
 .search {
   position: relative;
   padding-top: 51px;
+  padding-bottom: 30px;
   text-align: center;
   background-color: #fff;
 }
@@ -739,7 +714,7 @@ input[type="radio"].visually-hidden {
 }
 .search__description {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 78px;
   line-height: 24px;
   color: #333;
 }
@@ -751,18 +726,17 @@ input[type="radio"].visually-hidden {
   color: #fff;
   text-transform: inherit;
   background-color: #766357;
-  border: none;
 }
 .search__form {
   display: none;
   position: absolute;
-  top: 291px;
+  top: 292px;
   left: 50%;
   z-index: 2;
   width: 569px;
   box-sizing: border-box;
   margin-left: -285px;
-  padding: 55px 56px;
+  padding: 56px 56px;
   font-weight: 700;
   background-color: inherit;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -976,8 +950,8 @@ input[type="radio"].visually-hidden {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 35px;
-  padding-bottom: 42px;
+  padding-top: 36px;
+  padding-bottom: 39px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 .footer--index {
@@ -1018,6 +992,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 46px;
   height: 46px;
+  margin-bottom: 5px;
   font-size: 0;
   background-color: #81b3d2;
   cursor: pointer;
